@@ -1,8 +1,8 @@
 export default {
   secretKey: 'THISISMYSECURETOKEN',
-  host: 'http://localhost',
-  port: '21465',
-  deviceName: 'WppConnect',
+  host: process.env.HOST || '0.0.0.0',
+  port: process.env.PORT || 8080,
+  deviceName: 'ARWtsapp',
   poweredBy: 'WPPConnect-Server',
   startAllSession: true,
   tokenStoreType: 'file',
